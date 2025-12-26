@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const morgan = require('morgan');
-const { body, validationResult } = require('express-validator');
 const path = require('node:path');
 const usersRouter = require('./routes/usersRouter');
 require('dotenv').config();
