@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/general.css"/>
+    <link rel="stylesheet" href="/searchStyle.css"/>
+  </head>
+<body>
+    <div>
+        <h1>Results</h1>
+        <h3><b>Searched Name:</b> <%= searchedName %></h3>
+        <h3><b>Searched Email:</b> <%= searchedEmail %></h3>
+        <h2>Results found:</h2>
+        <% if (results && results.length !== 0) { %>
+            <h3><b>ID:</b> <%= results.id %></h3>
+            <h3><b>Name:</b> <%= results.firstName %> <%= results.lastName %></h3>
+            <h3><b>Email:</b> <%= results.email %></h3>
+            <% if (results.age) { %>
+                <h3><b>Age:</b> <%= results.age %></h3>
+            <% } %>
+            <% if (results.bio) { %>
+                <h3><b>Bio:</b> <%= results.bio %></h3>
+            <% } %>
+        <% } else { %>
+            <h3>Worker not found </h3>
+        <% } %>
+        <a href="/">Back to home</a>
+    </div>
+</body>
+</html>

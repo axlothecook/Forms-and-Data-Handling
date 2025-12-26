@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.top-div {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100rem;
+    height: 30rem;
+}
+
+ul li {
+    width: fit-content;
+}
+
+#search-form-div form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 25rem;
+} 
+
+div h1, div h2 {
+    text-align: center;
+}
+
+.bottom-div {
+    display: flex;
+    gap: .5rem;
+}
+
+.bottom-div form button {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .7rem;
+}
