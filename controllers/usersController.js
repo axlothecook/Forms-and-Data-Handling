@@ -23,7 +23,7 @@ const validateUser = [
     body('bio').trim()
     .optional({ values: "falsy" })
     .isLength({min: 0, max: 200 }).withMessage('Biography must be less than 200 characters.')
-    .matches(/[a-zA-Z0-9 .,]/).withMessage('Only letters, numbers, commas and dots allowed.'),
+    .matches(/[A-Za-z0-9,. ]/).withMessage('Only letters, numbers, commas, space and dots allowed.'),
 ];
 
 const validateSearch = [
